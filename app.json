@@ -1,0 +1,47 @@
+{
+    "name": "A Telegram Captcha Bot by @itzmecrazy.",
+    "description": "A Telegram Bot for verifying new group members by Emojis or Number Captcha. Made by @itzmecrazy.",
+    "keywords": [
+        "telegram",
+        "emoji",
+        "captcha",
+        "number",
+        "digit",
+        "bot"
+    ],
+    "repository": "https://github.com/godofanjal/CaptchaBot",
+    "success_url": "https://t.me/Pegasus_Network",
+    "env": {
+        "APP_ID": {
+            "description": "Get this value from my.telegram.org"
+        },
+        "API_HASH": {
+            "description": "Get this value from my.telegram.org"
+        },
+        "BOT_TOKEN": {
+            "description": "Get this from @BotFather"
+        },
+        "MONGODB_URI": {
+            "description": "MongoDB URI for Saving Chat Settings"
+        },
+        "SUDO_USERS": {
+            "description": "Your Telegram User ID for using Admin commands. goto @JVToolsBot and send /id to get your id",
+            "required": false
+        },
+        "SESSION_NAME": {
+            "description": "No need",
+            "required": false
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
