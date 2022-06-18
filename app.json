@@ -25,7 +25,7 @@
             "description": "MongoDB URI for Saving Chat Settings"
         },
         "SUDO_USERS": {
-            "description": "Your Telegram User ID for using Admin commands. goto @JVToolsBot and send /id to get your id",
+            "description": "Your Telegram User ID for using Admin commands. go to @PrinceSerenaBot and send /id to get your id",
             "required": false
         },
         "SESSION_NAME": {
